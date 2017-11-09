@@ -1,3 +1,4 @@
+/*=====HEADER CONTENT==========*/
 html, body{
   height:100%;
   margin: 0;
@@ -35,4 +36,80 @@ hr{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+/*=====HEADER CONTENT==========*/
+/*=====BODY CONTENT============*/
+.bodyContent{
+  background-color: rgb(19, 19, 25);
+  height: 100%;
+  color:white;
+}
+
+.proLists{
+  display: flex;
+  text-align: center;
+}
+
+.proLists > h2, .topTen{
+  text-align: center;
+}
+
+.proLists > div {
+  flex:1;
+  position: relative;
+}
+
+.proLists > div > ul{
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.aboutMe{
+  text-align: center;
+  color: white;
+  padding: 5rem 0 0 0;
+  margin: 0;
+}
+
+.placesList{
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.tube{
+  max-width: 70%;
+  margin:0 auto;
+}
+
+.bodyContent h2{
+  font-size: 3em;
+  font-family: 'Open Sans Condensed', monospace;
+}
+
+.bodyContent p, .bodyContent li{
+  font-family: 'Barlow', monospace;
+}
+
+footer{
+  padding: 20px;
+  margin: 20px;
+}
+
+.quiz{
+  background-color: white;
+  color:rgba(255, 0, 255, .5);
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 50px 50px 50px 50px;
+  padding: .5em 1.2em .5em 1.2em;
+}
+
+.button{
+  font-family: monospace;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0 0 0;
 }
