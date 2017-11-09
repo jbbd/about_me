@@ -9,16 +9,16 @@ var likesPineapplePizza = prompt('Does Jules like pineapple pizza?').toLowerCase
 if (likesPineapplePizza === 'y' || likesPineapplePizza === 'yes'){
   alert('Correct!');
   tally++;
-}else if(likesPineapplePizza === 'n' || likesPineapplePizza === 'no'){
+} else if(likesPineapplePizza === 'n' || likesPineapplePizza === 'no'){
   alert('Actually, that\'s Jules\' favorite type of Pizza!');
 }
 console.log('Does Jules like pizza', likesPineapplePizza);
 
 var favoriteConsole = prompt('Do you think Jules\' favorite gaming console is the PS4?').toLowerCase();
 if (favoriteConsole === 'y' || favoriteConsole === 'yes'){
-  alert('Jules is not a dirty console peasant! PC Master Race forever!');
-}else if(favoriteConsole === 'n' || favoriteConsole === 'no'){
-  alert('Correct! PC Master Race! Praise Gaben!');
+  alert('Nope - PC\'s are much better for gaming.');
+} else if(favoriteConsole === 'n' || favoriteConsole === 'no'){
+  alert('Correct! PC Master Race!');
   tally++;
 }
 console.log('Favorite gaming console', favoriteConsole);
@@ -27,7 +27,7 @@ var isJulesNice = prompt('Would Jules\' save you if you were being attacked by a
 if (isJulesNice === 'y' || isJulesNice === 'yes'){
   alert('He would defintely save you, ' + userName + '!');
   tally++;
-}else if(isJulesNice === 'n' || isJulesNice === 'no'){
+} else if(isJulesNice === 'n' || isJulesNice === 'no'){
   alert('No! What do you take him for? A coward?!');
 }
 console.log('Will prevent bear attack', isJulesNice);
@@ -36,7 +36,7 @@ var likesRain = prompt('Does Jules like rain?').toLowerCase();
 if (likesRain === 'y' ||
     likesRain === 'yes'){
   alert('Jules hates rainy days!');
-}else if(likesRain === 'n' ||
+} else if(likesRain === 'n' ||
          likesRain === 'no'){
   alert('Correct! Sunny days are much better.');
   tally++;
@@ -47,13 +47,12 @@ var isCatPerson = prompt('Jules is totally a cat person! Don\'t you think so,  '
 if (isCatPerson === 'y' ||
     isCatPerson === 'yes'){
   alert('As much as he likes cats, he likes dogs a little bit more!');
-}else if(isCatPerson === 'n' ||
+} else if(isCatPerson === 'n' ||
           isCatPerson === 'no'){
   alert('Yup - he is actually allergic to cats!');
   tally++;
 }
 console.log('Is Jules a cat person?', isCatPerson);
-
 
 for (var i = 1; i <= 4; i++){
   do
@@ -61,7 +60,7 @@ for (var i = 1; i <= 4; i++){
   while(isNaN(guessNum));
   if (i === 4){
     alert('Sorry, but my favorite number is ' + 14 + '.');
-  }else if (guessNum > 14){
+  } else if (guessNum > 14){
     alert('Guess lower!');
   } else if(guessNum < 14){
     alert('Guess higher!');
@@ -83,7 +82,7 @@ while(counter < 6){
     alert('Congrats! You guessed right!');
     tally++;
     break outer_loop;
-  }else{
+  } else{
     alert('Incorrect.');
     counter++;
   }
@@ -95,12 +94,12 @@ console.log('Tally count', tally);
 
 if (tally === 0 || tally === 1){
   alert('You got ' + tally + ' questions right? Aww man...');
-}else if(tally < 3){
+} else if(tally < 3){
   alert(tally + ' out of 7? Maybe next time, ' + userName);
-}else if(tally < 5){
+} else if(tally < 5){
   alert(tally + ' out of 7. I guess that\'s ok, ' + userName);
-}else if(tally <= 6){
+} else if(tally <= 6){
   alert(tally + ' out of 7. Pretty good, ' + userName);
-}else if(tally === 7){
+} else if(tally === 7){
   alert('Wow, ' + userName + '! Great guessing! *High fives*');
 }
