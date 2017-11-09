@@ -3,6 +3,8 @@
 var tally = 0;
 
 var userName = prompt('Hello! May I ask for your name, please?');
+function userNameFunction()
+{
 alert('Welcome, ' + userName + '!');
 
 var likesPineapplePizza = prompt('Does Jules like pineapple pizza?').toLowerCase();
@@ -13,7 +15,10 @@ if (likesPineapplePizza === 'y' || likesPineapplePizza === 'yes'){
   alert('Actually, that\'s Jules\' favorite type of Pizza!');
 }
 console.log('Does Jules like pizza', likesPineapplePizza);
+}
+userNameFunction();
 
+function favoriteConsoleFunction() {
 var favoriteConsole = prompt('Do you think Jules\' favorite gaming console is the PS4?').toLowerCase();
 if (favoriteConsole === 'y' || favoriteConsole === 'yes'){
   alert('Nope - PC\'s are much better for gaming.');
@@ -22,8 +27,12 @@ if (favoriteConsole === 'y' || favoriteConsole === 'yes'){
   tally++;
 }
 console.log('Favorite gaming console', favoriteConsole);
+}
+favoriteConsoleFunction();
+
 
 var isJulesNice = prompt('Would Jules\' save you if you were being attacked by a bear?').toLowerCase();
+function isJulesNiceFunction() {
 if (isJulesNice === 'y' || isJulesNice === 'yes'){
   alert('He would defintely save you, ' + userName + '!');
   tally++;
@@ -31,8 +40,11 @@ if (isJulesNice === 'y' || isJulesNice === 'yes'){
   alert('No! What do you take him for? A coward?!');
 }
 console.log('Will prevent bear attack', isJulesNice);
+}
+isJulesNiceFunction();
 
 var likesRain = prompt('Does Jules like rain?').toLowerCase();
+function likesRainFunction () {
 if (likesRain === 'y' ||
     likesRain === 'yes'){
   alert('Jules hates rainy days!');
@@ -42,8 +54,11 @@ if (likesRain === 'y' ||
   tally++;
 }
 console.log('Does Jules like rain', likesRain);
+}
+likesRainFunction ();
 
 var isCatPerson = prompt('Jules is totally a cat person! Don\'t you think so,  ' + userName + '?').toLowerCase();
+function isCatPersonFunction () {
 if (isCatPerson === 'y' ||
     isCatPerson === 'yes'){
   alert('As much as he likes cats, he likes dogs a little bit more!');
@@ -53,7 +68,10 @@ if (isCatPerson === 'y' ||
   tally++;
 }
 console.log('Is Jules a cat person?', isCatPerson);
+}
+isCatPersonFunction();
 
+  function guessNumFunction() {
 for (var i = 1; i <= 4; i++){
   do
     var guessNum = parseInt(prompt('What\'s my favorite number?\nHint: It\'s between 1 and 50.'));
@@ -70,8 +88,11 @@ for (var i = 1; i <= 4; i++){
     break;
   }
 }
+}
+guessNumFunction();
 console.log('user guessd number', guessNum);
 
+function whatStateFunction () {
 var whatState;
 var counter = 0;
 var listStates = ['california', 'new york', 'louisiana', 'oregon'];
@@ -91,6 +112,9 @@ while(counter < 6){
 }
 console.log('State guessed', whatState);
 console.log('Tally count', tally);
+}
+whatStateFunction();
+
 
 if (tally === 0 || tally === 1){
   alert('You got ' + tally + ' questions right? Aww man...');
