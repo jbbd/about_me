@@ -31,6 +31,11 @@ hr{
   width: 25rem;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
+/*NAVIGATION*/
+a{
+  color: white;
+  text-decoration: none;
+}
 
 .nav{
   text-align: right;
@@ -40,8 +45,8 @@ hr{
   padding:.5em .7em .5em .7em;
   display: inline-block;
   font-family: 'Barlow', monospace;
-
 }
+/*END NAVIGATION*/
 /*source:https://stackoverflow.com/questions/9622354/make-a-div-center-of-viewport-horizontally-and-vertically
 I had to check how to center my name in the viewport. Using padding and margin em's
 just caused them to migrate into another direction. Using the source above, the name
